@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Simulador de Cara ou Coroa</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Simulador de Cara ou Coroa</h1>
+        <div class="coin">
+            <div id="coinContainer" class="coin-container">
+                <img id="coinImage" src="/videos/moeda.jpg" alt="Moeda">
+            </div>
+        </div>
+        <div class="choices">
+            <button onclick="chooseSide('cara')">Cara</button>
+            <button onclick="chooseSide('coroa')">Coroa</button>
+        </div>
+        <button id="playButton" onclick="flipCoin()" disabled>Jogar</button>
+        <div class="result" id="result"></div>
+        <div class="stats">
+            <span>Vitórias: <span id="wins">0</span></span>
+            <span>Derrotas: <span id="losses">0</span></span>
+        </div>
+        <div class="history" id="history"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
